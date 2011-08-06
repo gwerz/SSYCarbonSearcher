@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		480049BC0E8DEC8A00537E48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480049BB0E8DEC8A00537E48 /* Foundation.framework */; };
+		480049C10E8DECB600537E48 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480049960E8DEB3F00537E48 /* Cocoa.framework */; };
+		480049C20E8DECB800537E48 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48561FF908D7786E00D33B48 /* Carbon.framework */; };
+		48561FFA08D7786E00D33B48 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48561FF908D7786E00D33B48 /* Carbon.framework */; };
+		4862F29408DD2C9600110AF9 /* CarbonSearcher.pch in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4862F29308DD2C9600110AF9 /* CarbonSearcher.pch */; };
+		48730EC8127F2984006155E9 /* NSString+SSYExtraUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 48730EC7127F2984006155E9 /* NSString+SSYExtraUtils.m */; };
+		48730EC9127F2984006155E9 /* NSString+SSYExtraUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 48730EC7127F2984006155E9 /* NSString+SSYExtraUtils.m */; };
+		48730EFD127F2C13006155E9 /* NSError+LowLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48730EFC127F2C13006155E9 /* NSError+LowLevel.m */; };
+		48730EFE127F2C13006155E9 /* NSError+LowLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48730EFC127F2C13006155E9 /* NSError+LowLevel.m */; };
+		488104D20E89B99900E07D82 /* CarbonSearcherDemoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 488104D00E89B99900E07D82 /* CarbonSearcherDemoTool.m */; };
+		48B09C610E8DF12200A6E1D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48B09C5D0E8DF12200A6E1D5 /* InfoPlist.strings */; };
+		48B09C620E8DF12200A6E1D5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48B09C5F0E8DF12200A6E1D5 /* MainMenu.xib */; };
+		48B09C670E8DF14100A6E1D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B09C630E8DF14100A6E1D5 /* main.m */; };
+		48B09C680E8DF14100A6E1D5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48B09C640E8DF14100A6E1D5 /* Info.plist */; };
+		48B09C690E8DF14100A6E1D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B09C650E8DF14100A6E1D5 /* AppDelegate.m */; };
+		48B09C7F0E8DF36800A6E1D5 /* SSYCarbonSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B09C7E0E8DF36800A6E1D5 /* SSYCarbonSearcher.m */; };
+		48B09C800E8DF36800A6E1D5 /* SSYCarbonSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B09C7E0E8DF36800A6E1D5 /* SSYCarbonSearcher.m */; };
+		48EEBE380FFD3D5100A358CC /* SSYVolumeServerGuy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EEBE370FFD3D5100A358CC /* SSYVolumeServerGuy.m */; };
+		48EEBE390FFD3D5100A358CC /* SSYVolumeServerGuy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EEBE370FFD3D5100A358CC /* SSYVolumeServerGuy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F9E0486AA7600D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				4862F29408DD2C9600110AF9 /* CarbonSearcher.pch in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4800496D0E8DE7DA00537E48 /* CarbonSearcherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarbonSearcherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4800496F0E8DE7DA00537E48 /* CarbonSearcherApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CarbonSearcherApp-Info.plist"; sourceTree = "<group>"; };
+		480049960E8DEB3F00537E48 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		480049BB0E8DEC8A00537E48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		48561FF908D7786E00D33B48 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		4862F29308DD2C9600110AF9 /* CarbonSearcher.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CarbonSearcher.pch; sourceTree = "<group>"; };
+		48730EC6127F2984006155E9 /* NSString+SSYExtraUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SSYExtraUtils.h"; path = "../../CategoriesObjC/NSString+SSYExtraUtils.h"; sourceTree = SOURCE_ROOT; };
+		48730EC7127F2984006155E9 /* NSString+SSYExtraUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SSYExtraUtils.m"; path = "../../CategoriesObjC/NSString+SSYExtraUtils.m"; sourceTree = SOURCE_ROOT; };
+		48730EFB127F2C13006155E9 /* NSError+LowLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSError+LowLevel.h"; path = "../../CategoriesObjC/NSError+LowLevel.h"; sourceTree = SOURCE_ROOT; };
+		48730EFC127F2C13006155E9 /* NSError+LowLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSError+LowLevel.m"; path = "../../CategoriesObjC/NSError+LowLevel.m"; sourceTree = SOURCE_ROOT; };
+		488104D00E89B99900E07D82 /* CarbonSearcherDemoTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarbonSearcherDemoTool.m; sourceTree = "<group>"; };
+		48B09C5E0E8DF12200A6E1D5 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = InfoPlist.strings; sourceTree = "<group>"; };
+		48B09C600E8DF12200A6E1D5 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = MainMenu.xib; sourceTree = "<group>"; };
+		48B09C630E8DF14100A6E1D5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		48B09C640E8DF14100A6E1D5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B09C650E8DF14100A6E1D5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		48B09C660E8DF14100A6E1D5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		48B09C7D0E8DF36800A6E1D5 /* SSYCarbonSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSYCarbonSearcher.h; sourceTree = "<group>"; };
+		48B09C7E0E8DF36800A6E1D5 /* SSYCarbonSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSYCarbonSearcher.m; sourceTree = "<group>"; };
+		48B0A3070E91EA7300A6E1D5 /* Documentation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Documentation; sourceTree = "<group>"; };
+		48EEBE360FFD3D5100A358CC /* SSYVolumeServerGuy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSYVolumeServerGuy.h; path = ../../ClassesObjC/SSYVolumeServerGuy.h; sourceTree = SOURCE_ROOT; };
+		48EEBE370FFD3D5100A358CC /* SSYVolumeServerGuy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSYVolumeServerGuy.m; path = ../../ClassesObjC/SSYVolumeServerGuy.m; sourceTree = SOURCE_ROOT; };
+		8DD76FA10486AA7600D96B5E /* CarbonSearch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CarbonSearch; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4800496B0E8DE7DA00537E48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				480049C10E8DECB600537E48 /* Cocoa.framework in Frameworks */,
+				480049C20E8DECB800537E48 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DD76F9B0486AA7600D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48561FFA08D7786E00D33B48 /* Carbon.framework in Frameworks */,
+				480049BC0E8DEC8A00537E48 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* CleanUpTool */ = {
+			isa = PBXGroup;
+			children = (
+				4800495F0E8DE77400537E48 /* Demo App */,
+				4800495A0E8DE75E00537E48 /* Demo Command-Line Tool */,
+				08FB7795FE84155DC02AAC07 /* Reuseable Library */,
+				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = CleanUpTool;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Reuseable Library */ = {
+			isa = PBXGroup;
+			children = (
+				48B0A3070E91EA7300A6E1D5 /* Documentation */,
+				48B09C7D0E8DF36800A6E1D5 /* SSYCarbonSearcher.h */,
+				48B09C7E0E8DF36800A6E1D5 /* SSYCarbonSearcher.m */,
+				48EEBE360FFD3D5100A358CC /* SSYVolumeServerGuy.h */,
+				48EEBE370FFD3D5100A358CC /* SSYVolumeServerGuy.m */,
+				48730EFB127F2C13006155E9 /* NSError+LowLevel.h */,
+				48730EFC127F2C13006155E9 /* NSError+LowLevel.m */,
+				48730EC6127F2984006155E9 /* NSString+SSYExtraUtils.h */,
+				48730EC7127F2984006155E9 /* NSString+SSYExtraUtils.m */,
+			);
+			name = "Reuseable Library";
+			sourceTree = "<group>";
+		};
+		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				480049BB0E8DEC8A00537E48 /* Foundation.framework */,
+				480049960E8DEB3F00537E48 /* Cocoa.framework */,
+				48561FF908D7786E00D33B48 /* Carbon.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76FA10486AA7600D96B5E /* CarbonSearch */,
+				4800496D0E8DE7DA00537E48 /* CarbonSearcherApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4800495A0E8DE75E00537E48 /* Demo Command-Line Tool */ = {
+			isa = PBXGroup;
+			children = (
+				4862F29308DD2C9600110AF9 /* CarbonSearcher.pch */,
+				488104D00E89B99900E07D82 /* CarbonSearcherDemoTool.m */,
+			);
+			name = "Demo Command-Line Tool";
+			sourceTree = "<group>";
+		};
+		4800495F0E8DE77400537E48 /* Demo App */ = {
+			isa = PBXGroup;
+			children = (
+				48B09C630E8DF14100A6E1D5 /* main.m */,
+				48B09C640E8DF14100A6E1D5 /* Info.plist */,
+				48B09C650E8DF14100A6E1D5 /* AppDelegate.m */,
+				48B09C660E8DF14100A6E1D5 /* AppDelegate.h */,
+				48B09C5C0E8DF12200A6E1D5 /* English.lproj */,
+				4800496F0E8DE7DA00537E48 /* CarbonSearcherApp-Info.plist */,
+			);
+			name = "Demo App";
+			sourceTree = "<group>";
+		};
+		48B09C5C0E8DF12200A6E1D5 /* English.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				48B09C5D0E8DF12200A6E1D5 /* InfoPlist.strings */,
+				48B09C5F0E8DF12200A6E1D5 /* MainMenu.xib */,
+			);
+			path = English.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4800496C0E8DE7DA00537E48 /* CarbonSearcherApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 480049720E8DE7DB00537E48 /* Build configuration list for PBXNativeTarget "CarbonSearcherApp" */;
+			buildPhases = (
+				480049690E8DE7DA00537E48 /* Resources */,
+				4800496A0E8DE7DA00537E48 /* Sources */,
+				4800496B0E8DE7DA00537E48 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarbonSearcherApp;
+			productName = CarbonSearcherApp;
+			productReference = 4800496D0E8DE7DA00537E48 /* CarbonSearcherApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8DD76F960486AA7600D96B5E /* CarbonSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4819417A08E2347400C62822 /* Build configuration list for PBXNativeTarget "CarbonSearch" */;
+			buildPhases = (
+				8DD76F990486AA7600D96B5E /* Sources */,
+				8DD76F9B0486AA7600D96B5E /* Frameworks */,
+				8DD76F9E0486AA7600D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarbonSearch;
+			productInstallPath = "$(HOME)/bin";
+			productName = CleanUpTool;
+			productReference = 8DD76FA10486AA7600D96B5E /* CarbonSearch */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4819417E08E2347400C62822 /* Build configuration list for PBXProject "SSYCarbonSearcher" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* CleanUpTool */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F960486AA7600D96B5E /* CarbonSearch */,
+				4800496C0E8DE7DA00537E48 /* CarbonSearcherApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		480049690E8DE7DA00537E48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B09C610E8DF12200A6E1D5 /* InfoPlist.strings in Resources */,
+				48B09C620E8DF12200A6E1D5 /* MainMenu.xib in Resources */,
+				48B09C680E8DF14100A6E1D5 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4800496A0E8DE7DA00537E48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B09C670E8DF14100A6E1D5 /* main.m in Sources */,
+				48B09C690E8DF14100A6E1D5 /* AppDelegate.m in Sources */,
+				48B09C7F0E8DF36800A6E1D5 /* SSYCarbonSearcher.m in Sources */,
+				48EEBE380FFD3D5100A358CC /* SSYVolumeServerGuy.m in Sources */,
+				48730EC8127F2984006155E9 /* NSString+SSYExtraUtils.m in Sources */,
+				48730EFD127F2C13006155E9 /* NSError+LowLevel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DD76F990486AA7600D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488104D20E89B99900E07D82 /* CarbonSearcherDemoTool.m in Sources */,
+				48B09C800E8DF36800A6E1D5 /* SSYCarbonSearcher.m in Sources */,
+				48EEBE390FFD3D5100A358CC /* SSYVolumeServerGuy.m in Sources */,
+				48730EC9127F2984006155E9 /* NSString+SSYExtraUtils.m in Sources */,
+				48730EFE127F2C13006155E9 /* NSError+LowLevel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		48B09C5D0E8DF12200A6E1D5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48B09C5E0E8DF12200A6E1D5 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		48B09C5F0E8DF12200A6E1D5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48B09C600E8DF12200A6E1D5 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		480049700E8DE7DB00537E48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "CarbonSearcherApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = CarbonSearcherApp;
+			};
+			name = Debug;
+		};
+		480049710E8DE7DB00537E48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "CarbonSearcherApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = CarbonSearcherApp;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		4819417B08E2347400C62822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CarbonSearcher.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = CarbonSearch;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		4819417C08E2347400C62822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CarbonSearcher.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = CarbonSearch;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		4819417F08E2347400C62822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Debug;
+		};
+		4819418008E2347400C62822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		480049720E8DE7DB00537E48 /* Build configuration list for PBXNativeTarget "CarbonSearcherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				480049700E8DE7DB00537E48 /* Debug */,
+				480049710E8DE7DB00537E48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4819417A08E2347400C62822 /* Build configuration list for PBXNativeTarget "CarbonSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4819417B08E2347400C62822 /* Debug */,
+				4819417C08E2347400C62822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4819417E08E2347400C62822 /* Build configuration list for PBXProject "SSYCarbonSearcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4819417F08E2347400C62822 /* Debug */,
+				4819418008E2347400C62822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

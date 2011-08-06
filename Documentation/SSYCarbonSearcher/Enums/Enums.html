@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html><head>
+    <title>Enumerations</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta name="generator" content="HeaderDoc" />
+<style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}--></style></head><body bgcolor="#ffffff">
+<a name="top"></a>
+<hr><!-- headerDoc=tag;  uid=//apple_ref/c/tag/SSYCarbonSearcherContinueStyle;  name=SSYCarbonSearcherContinueStyle -->
+<a name="//apple_ref/c/tag/SSYCarbonSearcherContinueStyle"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="SSYCarbonSearcherContinueStyle">SSYCarbonSearcherContinueStyle</a></h3>
+</td></tr></table><hr><p><!-- begin abstract -->Values returned by the callback in asynchronous operation which tell SSYCarbonSearcher how to proceed with further iterations.
+<!-- end abstract --></p>
+<p></p><pre><span class="keyword">enum</span> <!-- a logicalPath="//apple_ref/c/cl/SSYCarbonSearcherContinueStyle //apple_ref/c/tdef/SSYCarbonSearcherContinueStyle //apple_ref/c/tag/SSYCarbonSearcherContinueStyle //apple_ref/c/econst/SSYCarbonSearcherContinueStyle //apple_ref/c/struct/SSYCarbonSearcherContinueStyle //apple_ref/c/clconst/SSYCarbonSearcherContinueStyle //apple_ref/c/intf/SSYCarbonSearcherContinueStyle" --><span class="type">SSYCarbonSearcherContinueStyle</span><!-- /a --> { 
+    <span class="var">SSYCarbonSearcherContinue</span>, 
+    <span class="var">SSYCarbonSearcherClearAndContinue</span>, 
+    <span class="var">SSYCarbonSearcherAbort</span> 
+};  </pre>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Constants</font></h5>
+<blockquote>
+<dl>
+<dt><a name="//apple_ref/c/econst/SSYCarbonSearcherContinue"><code>SSYCarbonSearcherContinue </code></a></dt><dd>Tells SSYCarbonSearcher to continue with the next iteration and do not clear paths found so far from the value of SSYCarbonSearcherResultsKeyPaths.</dd>
+<dt><a name="//apple_ref/c/econst/SSYCarbonSearcherClearAndContinue"><code>SSYCarbonSearcherClearAndContinue </code></a></dt><dd>Tells SSYCarbonSearcher to clear paths found so far from the value of SSYCarbonSearcherResultsKeyPaths and then continue with the next iteration.</dd>
+<dt><a name="//apple_ref/c/econst/SSYCarbonSearcherAbort"><code>SSYCarbonSearcherAbort </code></a></dt><dd>Tells SSYCarbonSearcher to abort the search, do no more iterations and not return any more results.</dd>
+</dl>
+</blockquote>
+<p></p><p>Last Updated: Monday, September 29, 2008
+</p></body></html>

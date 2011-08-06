@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html><head>
+    <title>SSYCarbonSearcher.h</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta name="generator" content="HeaderDoc" />
+<style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}--></style></head><body bgcolor="#ffffff">
+<a name="top"></a>
+<a name="//apple_ref/doc/header/SSYCarbonSearcher.h" title="SSYCarbonSearcher.h"></a>
+<hr><table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h1><a name="SSYCarbonSearcher.h">SSYCarbonSearcher.h</a></h1>
+</td></tr></table><hr><p></p><p></p><hr><br><h2>Classes</h2>
+<a name="HeaderDoc_classes"></a>
+<dl>
+<dt><tt><a href="Classes/SSYCarbonSearcher_/index.html#//apple_ref/occ/cl/SSYCarbonSearcher" target="_top">SSYCarbonSearcher </a></tt></dt>
+<dd>    This class provides a class method for searching the startup disk for files matching a given name, returning paths.
+</dd>
+</dl>
+<hr><br><h2>Constants</h2>
+<hr><!-- headerDoc=data;  uid=//apple_ref/doc/compositePage/c/data/SSYCarbonSearcherResultsKeyContainerChanged;  name=SSYCarbonSearcherResultsKeyContainerChanged -->
+<a name="//apple_ref/doc/compositePage/c/data/SSYCarbonSearcherResultsKeyContainerChanged"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="SSYCarbonSearcherResultsKeyContainerChanged">SSYCarbonSearcherResultsKeyContainerChanged </a></h3>
+</td></tr></table><hr><p><!-- begin abstract -->I'm not quite sure I understand this, so I quote from the documentation of PBCatalogSearch[A]Sync.  This is an NSNumber BOOL "indicating whether the container’s contents have changed. If true, the container’s contents changed since the previous PBCatalogSearchSync call. Objects may still be returned even though the container changed. Note that if the container has changed, then the total set of items returned may be incorrect; some items may be returned multiple times, and some items may not be returned at all."  I always thought that this simply meant that the disk was modified during the search, which happens frequently in any multitasking operating system.  A result of YES, I think, can usually be ignored unless you have some reason to believe that the "change" involved your search results.  If you want to be 100% sure your results are correct, you could re-run the search until this value is NO.  But since disks are changing all the time, is that really any better?
+<!-- end abstract --></p>
+<p></p><pre><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/econst/NSString //apple_ref/c/struct/NSString //apple_ref/c/clconst/NSString //apple_ref/c/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span> <span class="keyword">const</span> <span class="var">SSYCarbonSearcherResultsKeyContainerChanged</span>;  </pre>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><p><!-- begin discussion -->This is one of the keys in the dictionary returned to the callback in asynchronous operation.
+ <!-- end discussion --></p>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/doc/compositePage/c/data/SSYCarbonSearcherResultsKeyIsDone;  name=SSYCarbonSearcherResultsKeyIsDone -->
+<a name="//apple_ref/doc/compositePage/c/data/SSYCarbonSearcherResultsKeyIsDone"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="SSYCarbonSearcherResultsKeyIsDone">SSYCarbonSearcherResultsKeyIsDone </a></h3>
+</td></tr></table><hr><p><!-- begin abstract -->A key to an NSNumber BOOL indicating whether or not the search is complete.  A callback can use this to summarize the final results and stop waiting for further invocations.
+<!-- end abstract --></p>
+<p></p><pre><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/econst/NSString //apple_ref/c/struct/NSString //apple_ref/c/clconst/NSString //apple_ref/c/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span> <span class="keyword">const</span> <span class="var">SSYCarbonSearcherResultsKeyIsDone</span>;  </pre>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><p><!-- begin discussion -->This is one of the keys in the dictionary returned to the callback in asynchronous operation.
+ <!-- end discussion --></p>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/doc/compositePage/c/data/SSYCarbonSearcherResultsKeyIterationIndex;  name=SSYCarbonSearcherResultsKeyIterationIndex -->
+<a name="//apple_ref/doc/compositePage/c/data/SSYCarbonSearcherResultsKeyIterationIndex"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="SSYCarbonSearcherResultsKeyIterationIndex">SSYCarbonSearcherResultsKeyIterationIndex </a></h3>
+</td></tr></table><hr><p><!-- begin abstract -->A key to an NSNumber integer giving the index of the current iteration being reported.  This number begins with 0 and increments by one with each iteration. 
+<!-- end abstract --></p>
+<p></p><pre><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/econst/NSString //apple_ref/c/struct/NSString //apple_ref/c/clconst/NSString //apple_ref/c/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span> <span class="keyword">const</span> <span class="var">SSYCarbonSearcherResultsKeyIterationIndex</span>;  </pre>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><p><!-- begin discussion -->This is one of the keys in the dictionary returned to the callback in asynchronous operation.
+ <!-- end discussion --></p>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/doc/compositePage/c/data/SSYCarbonSearcherResultsKeyNumberFound;  name=SSYCarbonSearcherResultsKeyNumberFound -->
+<a name="//apple_ref/doc/compositePage/c/data/SSYCarbonSearcherResultsKeyNumberFound"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="SSYCarbonSearcherResultsKeyNumberFound">SSYCarbonSearcherResultsKeyNumberFound </a></h3>
+</td></tr></table><hr><p><!-- begin abstract -->A key to an NSNumber integer giving the total nymber of paths found in the search, so far.  Unlike the SSYCarbonSearcherResultsKeyPaths array, this number is ^not^ cleared to zero when the callback returns SSYCarbonSearcherClearAndContinue. 
+<!-- end abstract --></p>
+<p></p><pre><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/econst/NSString //apple_ref/c/struct/NSString //apple_ref/c/clconst/NSString //apple_ref/c/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span> <span class="keyword">const</span> <span class="var">SSYCarbonSearcherResultsKeyNumberFound</span>;  </pre>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><p><!-- begin discussion -->This is one of the keys in the dictionary returned to the callback in asynchronous operation.
+ <!-- end discussion --></p>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/doc/compositePage/c/data/SSYCarbonSearcherResultsKeyOSErr;  name=SSYCarbonSearcherResultsKeyOSErr -->
+<a name="//apple_ref/doc/compositePage/c/data/SSYCarbonSearcherResultsKeyOSErr"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="SSYCarbonSearcherResultsKeyOSErr">SSYCarbonSearcherResultsKeyOSErr </a></h3>
+</td></tr></table><hr><p><!-- begin abstract -->A key to the latest OSErr returned by PBCatalogSearch[A]Sync, or any of the other File Manager functions which are invoked to prepare the search.  Note that a value of -1417, indicating errFSNoMoreItems, is normal when the search is completed.
+<!-- end abstract --></p>
+<p></p><pre><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/econst/NSString //apple_ref/c/struct/NSString //apple_ref/c/clconst/NSString //apple_ref/c/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span> <span class="keyword">const</span> <span class="var">SSYCarbonSearcherResultsKeyOSErr</span>;  </pre>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><p><!-- begin discussion -->This is one of the keys in the dictionary returned to the callback in asynchronous operation.
+ <!-- end discussion --></p>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/doc/compositePage/c/data/SSYCarbonSearcherResultsKeyPaths;  name=SSYCarbonSearcherResultsKeyPaths -->
+<a name="//apple_ref/doc/compositePage/c/data/SSYCarbonSearcherResultsKeyPaths"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="SSYCarbonSearcherResultsKeyPaths">SSYCarbonSearcherResultsKeyPaths </a></h3>
+</td></tr></table><hr><p><!-- begin abstract -->A key to the current array of paths in the search results.  This may contain only the results from the current iteration, or also the results from prior iteration(s), depending on whether prior callbacks returned SSYCarbonSearcherContinue or SSYCarbonSearcherClearAndContinue 
+<!-- end abstract --></p>
+<p></p><pre><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/econst/NSString //apple_ref/c/struct/NSString //apple_ref/c/clconst/NSString //apple_ref/c/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span> <span class="keyword">const</span> <span class="var">SSYCarbonSearcherResultsKeyPaths</span>;  </pre>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><p><!-- begin discussion -->This is one of the keys in the dictionary returned to the callback in asynchronous operation.
+ <!-- end discussion --></p>
+<p></p><h2>Enumerations</h2>
+<hr><!-- headerDoc=tag;  uid=//apple_ref/doc/compositePage/c/tag/SSYCarbonSearcherContinueStyle;  name=SSYCarbonSearcherContinueStyle -->
+<a name="//apple_ref/doc/compositePage/c/tag/SSYCarbonSearcherContinueStyle"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="SSYCarbonSearcherContinueStyle">SSYCarbonSearcherContinueStyle</a></h3>
+</td></tr></table><hr><p><!-- begin abstract -->Values returned by the callback in asynchronous operation which tell SSYCarbonSearcher how to proceed with further iterations.
+<!-- end abstract --></p>
+<p></p><pre><span class="keyword">enum</span> <!-- a logicalPath="//apple_ref/c/cl/SSYCarbonSearcherContinueStyle //apple_ref/c/tdef/SSYCarbonSearcherContinueStyle //apple_ref/c/tag/SSYCarbonSearcherContinueStyle //apple_ref/c/econst/SSYCarbonSearcherContinueStyle //apple_ref/c/struct/SSYCarbonSearcherContinueStyle //apple_ref/c/clconst/SSYCarbonSearcherContinueStyle //apple_ref/c/intf/SSYCarbonSearcherContinueStyle" --><span class="type">SSYCarbonSearcherContinueStyle</span><!-- /a --> { 
+    <span class="var">SSYCarbonSearcherContinue</span>, 
+    <span class="var">SSYCarbonSearcherClearAndContinue</span>, 
+    <span class="var">SSYCarbonSearcherAbort</span> 
+};  </pre>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Constants</font></h5>
+<blockquote>
+<dl>
+<dt><code>SSYCarbonSearcherContinue </code></dt><dd>Tells SSYCarbonSearcher to continue with the next iteration and do not clear paths found so far from the value of SSYCarbonSearcherResultsKeyPaths.</dd>
+<dt><code>SSYCarbonSearcherClearAndContinue </code></dt><dd>Tells SSYCarbonSearcher to clear paths found so far from the value of SSYCarbonSearcherResultsKeyPaths and then continue with the next iteration.</dd>
+<dt><code>SSYCarbonSearcherAbort </code></dt><dd>Tells SSYCarbonSearcher to abort the search, do no more iterations and not return any more results.</dd>
+</dl>
+</blockquote>
+<p></p><p>Last Updated: Monday, September 29, 2008
+</p></body></html>
